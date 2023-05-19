@@ -1,0 +1,18 @@
+<!--<li class="h-6 text-emerald-300 overflow-hidden">
+    <div class="cursor-pointer"><i class="fa-solid fa-angle-down fa-lg pr-2"></i> Lands and Dungeons</div> 
+</li>
+
+<div class="col-12 pl-8 text-gray-300 overflow-hidden">
+
+    <li class="h-6 text-gray-400 overflow-hidden">
+        <div class="cursor-pointer"><i class="fa-solid fa-angle-down pr-2"></i> List item</div> 
+    </li>
+
+</div>-->
+
+<div *ngFor="let category of categories">
+    <div class="col-12 h-[1px] mt-2.5 mb-2 mx-auto bg-gray-400 bg-opacity-10"></div>
+    <div class="px-3 pt-2">
+        <app-category [category]="category"></app-category>
+    </div>
+</div>

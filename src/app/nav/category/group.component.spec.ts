@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavLiComponent } from './nav-li.component';
+import { CategoryComponent } from './category.component';
 
-describe('NavLiComponent', () => {
-  let component: NavLiComponent;
-  let fixture: ComponentFixture<NavLiComponent>;
+describe('CategoryComponent', () => {
+  let component: CategoryComponent;
+  let fixture: ComponentFixture<CategoryComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavLiComponent]
+      declarations: [CategoryComponent]
     });
-    fixture = TestBed.createComponent(NavLiComponent);
+    fixture = TestBed.createComponent(CategoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

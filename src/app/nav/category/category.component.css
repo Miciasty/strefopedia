@@ -526,6 +526,9 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -571,11 +574,6 @@ video {
   height: 100vh;
 }
 
-.h-nav-full {
-  /*h-[calc(100vh-9rem-9rem)*/
-  height: calc(100vh - 9rem - 8rem);
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -594,10 +592,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
 }
 
 .bg-gray-400 {
@@ -657,6 +651,10 @@ video {
   padding-right: 0.75rem;
 }
 
+.pl-0 {
+  padding-left: 0rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -692,21 +690,6 @@ video {
   line-height: 1.75rem;
 }
 
-.fancy-scrollbar::-webkit-scrollbar {
-  width: 3px;
-}
-
-.fancy-scrollbar::-webkit-scrollbar-track {
-  background-color: #0f172a;
-  border-radius: 100px;
-}
-
-.fancy-scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 100px;
-  background: #8070d4;
-  border: 6px solid rgba(0, 0, 0, 0.2);
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -724,9 +707,41 @@ video {
   color: rgb(252 211 77 / var(--tw-text-opacity));
 }
 
+.text-opacity-amber:hover {
+  --tw-text-opacity: 1;
+  color: rgb(252 211 77 / var(--tw-text-opacity));
+}
+
 .text-emerald-300 {
   --tw-text-opacity: 1;
   color: rgb(110 231 183 / var(--tw-text-opacity));
+}
+
+.text-opacity-emerald:hover {
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity));
+}
+
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
+}
+
+.text-opacity-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
+}
+
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+.text-opacity-orange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+.text-opacity:hover {
+  --tw-text-opacity: 0.7;
 }
 
 .text-gray-200 {
@@ -763,10 +778,6 @@ body {
 
 .font-mont {
   font-family: 'Montserrat', sans-serif;
-}
-
-.background-logo {
-  background-image: url("../assets/img/bg-logo.png");
 }
 
 .bd-blur {

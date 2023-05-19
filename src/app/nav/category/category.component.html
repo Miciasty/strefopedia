@@ -1,0 +1,18 @@
+
+<li (click)="thisToogle()" class="h-6 text-{{category.color}}-300 text-opacity overflow-hidden">
+    <div class="cursor-pointer">
+        <i class="fa-solid fa-folder-{{folder_status}} pr-2"></i>
+        {{category.name}}
+    </div> 
+</li>
+
+<div *ngIf="show" class="col-12 pl-8 mb-2 text-gray-300 overflow-hidden">
+    <div *ngFor="let element of category.items">
+        <ng-container *ngIf="isItem(element) else categoryTemplate">
+            <app-item [item]="element"></app-item>
+        </ng-container>
+        <ng-template #categoryTemplate>
+            <app-category [category]="getCategory(element)"></app-category>
+        </ng-template>
+    </div>
+</div>

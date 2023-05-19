@@ -11,3 +11,10 @@ body {
 .font-mont {
     font-family: 'Montserrat', sans-serif;
 }
+
+.background-logo {
+    background-image: url("../assets/img/bg-logo.png");
+}
+.bd-blur {
+    backdrop-filter: blur(2px);
+}
