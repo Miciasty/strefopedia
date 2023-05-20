@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '../category'; //Dodałem import Group
+import { Category } from 'src/app/category'; //Dodałem import Group
 
 @Component({
   selector: 'app-nav',

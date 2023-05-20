@@ -1,4 +1,3 @@
-import { NavComponent } from "./nav/nav.component";
 export interface Category {
     id: number;
     name: string;

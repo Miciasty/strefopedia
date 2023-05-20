@@ -3,31 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NavComponent } from './nav/nav.component';
-import { ItemComponent } from './nav/item/item.component';
-import { CategoryComponent } from './nav/category/category.component';
-import { MainComponent } from './main/main.component';
-
-import { SecurityContext } from '@angular/core';
+import { NavComponent } from './wiki/nav/nav.component';
+import { ItemComponent } from './wiki/nav/item/item.component';
+import { CategoryComponent } from './wiki/nav/category/category.component';
+import { MainComponent } from './wiki/main/main.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown'; 
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
-    ItemComponent,
-    CategoryComponent,
-    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    AppRoutingModule,
+    RouterModule,
     MarkdownModule.forRoot({
       loader: HttpClient
     }),
-    MarkdownModule.forChild()
+    //ForChild nie potrzebne dla markdown module jeśli jest w głównym module!
   ],
   providers: [],
   bootstrap: [AppComponent]
