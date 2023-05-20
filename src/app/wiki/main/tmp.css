@@ -21,3 +21,22 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+.h-main {
+    height: calc(100vh - 14rem);
+}
+
+.fancy-scrollbar::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .fancy-scrollbar::-webkit-scrollbar-track {
+    background-color: #0f172a;
+    border-radius: 100px;
+  }
+  
+  .fancy-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #8070d4;
+    border: 6px solid rgba(0, 0, 0, 0.2);
+  }
