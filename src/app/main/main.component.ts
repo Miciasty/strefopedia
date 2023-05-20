@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+  markdown = "./main/markdown/szybki_ghul.md"
   
 }
 

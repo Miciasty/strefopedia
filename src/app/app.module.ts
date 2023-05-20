@@ -9,6 +9,7 @@ import { CategoryComponent } from './nav/category/category.component';
 import { MainComponent } from './main/main.component';
 
 import { SecurityContext } from '@angular/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown'; 
 
 @NgModule({
@@ -22,8 +23,9 @@ import { MarkdownModule } from 'ngx-markdown';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MarkdownModule.forRoot({ 
-      sanitize: SecurityContext.NONE 
+    HttpClientModule,
+    MarkdownModule.forRoot({
+      loader: HttpClient
     }),
     MarkdownModule.forChild()
   ],
