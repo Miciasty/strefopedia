@@ -9,7 +9,7 @@ import { Category, GroupElement, Item } from 'src/app/category';
 export class CategoryComponent implements OnInit {
   @Input() category!: Category
 
-  public show:Boolean = false
+  public show:boolean = false //! typ boolean piszemy z małej
   public folder_status:string = "closed"
 
   ngOnInit() {
